@@ -1,7 +1,6 @@
-
 from enum import Enum
-from CommonInterface import BaseType
-from CommonInterface import IndividualValues
+from PokemonObject.CommonInterface import BaseType
+from PokemonObject.CommonInterface import IndividualValues
 
 
 # We only need battle related data, but keep as 

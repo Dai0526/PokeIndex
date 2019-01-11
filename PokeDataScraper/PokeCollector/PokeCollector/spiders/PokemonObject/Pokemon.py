@@ -1,6 +1,6 @@
 from enum import Enum
-from PokemonObject.CommonInterface import BaseType
-from PokemonObject.CommonInterface import IndividualValues
+from PokeCollector.spiders.PokemonObject.CommonInterface import BaseType
+from PokeCollector.spiders.PokemonObject.CommonInterface import IndividualValues
 
 
 # We only need battle related data, but keep as 

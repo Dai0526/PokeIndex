@@ -1,5 +1,5 @@
 import scrapy
-import PokemonObject.Pokemon
+import PokeCollector.spiders.PokemonObject.Pokemon
 # That's the Web crawler for the English version
 # Implement the English ver first so that it can avoid some encoding problem
 class PokeBall(scrapy.Spider):
@@ -15,5 +15,11 @@ class PokeBall(scrapy.Spider):
 
 	def parse(self, response):
 		wildPokemon = Pokemon()
+		wildPokemon.index = 1
+
+
+
+
+
 
 

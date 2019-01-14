@@ -1,7 +1,6 @@
-
 from enum import Enum
-from CommonInterface import BaseType
-from CommonInterface import IndividualValues
+from PokeCollector.spiders.PokemonObject.CommonInterface import BaseType
+from PokeCollector.spiders.PokemonObject.CommonInterface import IndividualValues
 
 
 # We only need battle related data, but keep as 
@@ -10,11 +9,11 @@ class Pokemon():
 	def __init__(self):
 		self.pokemonName = ""
 		self.index = 0
-		self.pokemonType = BaseType.UNDEFINED
+		self.pokemonType = []
 		self.SkillList = []
 		self.IVs = IndividualValues()
 
-	def __init__(self, name =  "", index = 0, typ=BaseType.UNDEFINED, skillList=[], ivs=IndividualVal:
+	def __init__(self, name =  "", index = 0, typ=[], skillList=[], ivs=IndividualValues()):
 		self.pokemonName  = name		
 		self.index = index
 		self.pokemonType = typ
